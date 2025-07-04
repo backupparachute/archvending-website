@@ -1,0 +1,330 @@
+---
+layout: default
+title: Contact Us
+description: Contact Arch Vending for a free consultation and quote. We serve the St. Louis metro area with reliable vending solutions. Call us today or fill out our contact form.
+---
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+        <p class="lead">Ready to get started with quality vending services? Contact us today for a free consultation and quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Information -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-5">
+            <h3 class="text-primary mb-4">Get Your Free Quote</h3>
+            <p class="text-muted mb-4">Fill out the form below and we'll get back to you within 24 hours with a personalized quote for your location.</p>
+            
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name *</label>
+                  <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name *</label>
+                  <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="col-12">
+                  <label for="company" class="form-label">Company Name</label>
+                  <input type="text" class="form-control" id="company">
+                </div>
+                <div class="col-12">
+                  <label for="address" class="form-label">Business Address *</label>
+                  <input type="text" class="form-control" id="address" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="city" class="form-label">City *</label>
+                  <input type="text" class="form-control" id="city" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="state" class="form-label">State *</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Select State</option>
+                    <option value="MO">Missouri</option>
+                    <option value="IL">Illinois</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="zipCode" class="form-label">Zip Code *</label>
+                  <input type="text" class="form-control" id="zipCode" required>
+                </div>
+                <div class="col-12">
+                  <label for="serviceType" class="form-label">Service Type *</label>
+                  <select class="form-select" id="serviceType" required>
+                    <option value="">Select Service Type</option>
+                    <option value="traditional">Traditional Vending Machines</option>
+                    <option value="kiosks">Modern Touch-Screen Kiosks</option>
+                    <option value="honor-boxes">Honor Boxes</option>
+                    <option value="multiple">Multiple Services</option>
+                    <option value="consultation">Just a Consultation</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="locationType" class="form-label">Location Type</label>
+                  <select class="form-select" id="locationType">
+                    <option value="">Select Location Type</option>
+                    <option value="office">Office Building</option>
+                    <option value="warehouse">Warehouse/Factory</option>
+                    <option value="hospital">Hospital/Medical</option>
+                    <option value="school">School/University</option>
+                    <option value="retail">Retail Store</option>
+                    <option value="auto">Auto Repair/Service</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="employees" class="form-label">Number of Employees</label>
+                  <select class="form-select" id="employees">
+                    <option value="">Select Range</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-25">11-25</option>
+                    <option value="26-50">26-50</option>
+                    <option value="51-100">51-100</option>
+                    <option value="100+">100+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Additional Information</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your specific needs, preferences, or any questions you have..."></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="newsletter">
+                    <label class="form-check-label" for="newsletter">
+                      I'd like to receive updates about new services and special offers
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-lg w-100">Submit Request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Information -->
+      <div class="col-lg-4">
+        <div class="contact-info">
+          <h3 class="text-primary mb-4">Get In Touch</h3>
+          
+          <div class="mb-4">
+            <h5><i class="bi bi-telephone text-accent me-2"></i>Phone</h5>
+            <p class="mb-1"><a href="tel:{{ site.contact.phone }}" class="text-decoration-none">{{ site.contact.phone }}</a></p>
+            <small class="text-muted">Available 24/7 for emergencies</small>
+          </div>
+          
+          <div class="mb-4">
+            <h5><i class="bi bi-envelope text-accent me-2"></i>Email</h5>
+            <p class="mb-1"><a href="mailto:{{ site.contact.email }}" class="text-decoration-none">{{ site.contact.email }}</a></p>
+            <small class="text-muted">We respond within 24 hours</small>
+          </div>
+          
+          <div class="mb-4">
+            <h5><i class="bi bi-geo-alt text-accent me-2"></i>Service Area</h5>
+            <p class="mb-1">{{ site.contact.address }}</p>
+            <small class="text-muted">St. Louis metro and surrounding areas</small>
+          </div>
+          
+          <div class="mb-4">
+            <h5><i class="bi bi-clock text-accent me-2"></i>Business Hours</h5>
+            <p class="mb-1">Monday - Friday: 8:00 AM - 6:00 PM</p>
+            <p class="mb-1">Saturday: 9:00 AM - 2:00 PM</p>
+            <small class="text-muted">Emergency service available 24/7</small>
+          </div>
+          
+          <div class="mb-4">
+            <h5><i class="bi bi-chat-dots text-accent me-2"></i>Quick Response</h5>
+            <p class="mb-1">Free consultation within 48 hours</p>
+            <p class="mb-1">Custom quote within 24 hours</p>
+            <small class="text-muted">No obligation, no pressure</small>
+          </div>
+        </div>
+        
+        <!-- Social Media -->
+        <div class="card border-0 shadow-sm mt-4">
+          <div class="card-body p-4">
+            <h5 class="text-primary mb-3">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="{{ site.social.facebook }}" class="btn btn-outline-primary">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="{{ site.social.twitter }}" class="btn btn-outline-primary">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="{{ site.social.linkedin }}" class="btn btn-outline-primary">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Request Types -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="display-5 fw-bold text-primary mb-3">How Can We Help?</h2>
+        <p class="lead">Choose the type of service you need, and we'll provide a customized solution for your location.</p>
+      </div>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <i class="bi bi-cup-hot text-accent mb-3" style="font-size: 3rem;"></i>
+            <h4>New Installation</h4>
+            <p class="text-muted">Looking to add vending services to your location? We'll assess your needs and recommend the perfect solution.</p>
+            <a href="#contact-form" class="btn btn-primary">Get Quote</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card text-center h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <i class="bi bi-arrow-repeat text-accent mb-3" style="font-size: 3rem;"></i>
+            <h4>Service Request</h4>
+            <p class="text-muted">Need maintenance, restocking, or have an issue with existing equipment? We're here to help.</p>
+            <a href="tel:{{ site.contact.phone }}" class="btn btn-primary">Call Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card text-center h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <i class="bi bi-chat-quote text-accent mb-3" style="font-size: 3rem;"></i>
+            <h4>Consultation</h4>
+            <p class="text-muted">Not sure what you need? Let us visit your location and provide expert recommendations.</p>
+            <a href="#contact-form" class="btn btn-primary">Schedule Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="display-5 fw-bold text-primary mb-3">Frequently Asked Questions</h2>
+        <p class="lead">Get answers to common questions about our vending services.</p>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How quickly can you install vending machines?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We typically complete installations within 1-2 weeks after the initial consultation. For urgent needs, we can often expedite the process.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Do you service my area?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We serve the greater St. Louis metropolitan area including St. Louis City, St. Louis County, St. Charles County, and Illinois Metro East. Contact us to confirm coverage for your specific location.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                What types of payment do you accept?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Our traditional machines accept cash and coins. Our modern kiosks accept cash, credit/debit cards, and mobile payments like Apple Pay and Google Pay.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                How often do you restock machines?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We typically restock machines weekly, but frequency can be adjusted based on your location's needs and usage patterns.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                What if I have an emergency or machine malfunction?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We provide 24/7 emergency service. Simply call our emergency line and we'll respond as quickly as possible to resolve any issues.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <div class="container text-center">
+    <h2 class="display-5 fw-bold mb-4">Ready to Get Started?</h2>
+    <p class="lead mb-4">Don't wait - contact us today for a free consultation and quote. We'll help you find the perfect vending solution for your location.</p>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <a href="#contact-form" class="btn btn-light btn-lg">Fill Out Form</a>
+      <a href="tel:{{ site.contact.phone }}" class="btn btn-outline-light btn-lg">
+        <i class="bi bi-telephone me-2"></i>{{ site.contact.phone }}
+      </a>
+    </div>
+  </div>
+</section> 

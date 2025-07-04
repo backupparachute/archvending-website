@@ -1,0 +1,54 @@
+title: Arch Vending
+description: Professional vending machine services for St. Louis metro and surrounding areas
+url: "https://archvending.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  areas:
+    output: true
+    permalink: /areas/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "areas"
+    values:
+      layout: "area"
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services/
+  - title: Service Areas
+    url: /areas/
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+
+# Contact information
+contact:
+  phone: "(314) 555-0123"
+  email: "info@archvending.com"
+  address: "St. Louis, MO"
+
+# Social media
+social:
+  facebook: "https://facebook.com/archvending"
+  twitter: "https://twitter.com/archvending"
+  linkedin: "https://linkedin.com/company/archvending"
+
+# Colors (based on your logo)
+colors:
+  primary: "#353C56"    # Dark blue
+  secondary: "#62ABA2"  # Light blue
+  accent: "#ED1E44"     # Red
+  highlight: "#FED766"  # Yellow/gold 

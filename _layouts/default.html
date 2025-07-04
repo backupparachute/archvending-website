@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="HSTFQODK" defer></script>
+  <!-- / Fathom -->
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYMY68RCEK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JYMY68RCEK');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/Arch%20Vending_Dark%20Blue%20-%20Red%20-%20BG.png" sizes="128x128">
+  <link rel="icon" href="{{ site.baseurl }}/images/Arch%20Vending_Dark%20Blue%20-%20Red%20-%20BG.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="{{ site.baseurl }}/images/Arch%20Vending_Dark%20Blue%20-%20Red%20-%20BG.png" sizes="16x16" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: {{ site.colors.primary }};
+      --secondary-color: {{ site.colors.secondary }};
+      --accent-color: {{ site.colors.accent }};
+      --highlight-color: {{ site.colors.highlight }};
+      --light-bg: #f8f9fa;
+      --dark-text: #2c3e50;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: var(--primary-color) !important;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: var(--accent-color) !important;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .btn-primary:hover {
+      background-color: #2a3145;
+      border-color: #2a3145;
+    }
+
+    .btn-accent {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: white;
+    }
+
+    .btn-accent:hover {
+      background-color: #d4193a;
+      border-color: #d4193a;
+      color: white;
+    }
+
+    .bg-primary {
+      background-color: var(--primary-color) !important;
+    }
+
+    .bg-secondary {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .bg-accent {
+      background-color: var(--accent-color) !important;
+    }
+
+    .bg-highlight {
+      background-color: var(--highlight-color) !important;
+    }
+
+    .text-primary {
+      color: var(--primary-color) !important;
+    }
+
+    .text-secondary {
+      color: var(--secondary-color) !important;
+    }
+
+    .text-accent {
+      color: var(--accent-color) !important;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 100px 0;
+    }
+
+    .service-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .area-card {
+      border: 2px solid var(--secondary-color);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .area-card:hover {
+      border-color: var(--accent-color);
+      transform: scale(1.02);
+    }
+
+    .footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 50px 0 20px;
+    }
+
+    .footer a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: var(--highlight-color);
+    }
+
+    .contact-info {
+      background-color: var(--light-bg);
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .stats-counter {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+
+    .testimonial-card blockquote {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, var(--accent-color) 0%, #d4193a 100%);
+      color: white;
+      padding: 80px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/images/Arch%20Vending_Dark%20Blue%20-%20Red%20-%20BG.png" alt="Arch Vending">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          {% for item in site.navigation %}
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ site.baseurl }}{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <img src="{{ site.baseurl }}/images/Arch%20Vending_Stacked%20Light%20Blue%20-%20Red%20Text%20-%20Transparent.png" alt="Arch Vending" height="60" class="mb-3">
+          <p>Professional vending machine services for St. Louis metro and surrounding areas. We specialize in serving smaller, niche locations that larger companies often overlook.</p>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            {% for item in site.navigation %}
+            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Contact Info</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-telephone me-2"></i>{{ site.contact.phone }}</li>
+            <li><i class="bi bi-envelope me-2"></i>{{ site.contact.email }}</li>
+            <li><i class="bi bi-geo-alt me-2"></i>{{ site.contact.address }}</li>
+          </ul>
+          <div class="mt-3">
+            <a href="{{ site.social.facebook }}" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="{{ site.social.twitter }}" class="me-3"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="{{ site.social.linkedin }}"><i class="bi bi-linkedin fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; {{ 'now' | date: "%Y" }} Arch Vending. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
