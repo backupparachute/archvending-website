@@ -27,39 +27,39 @@ description: Contact Arch Vending for a free consultation and quote. We serve th
             <h3 class="text-primary mb-4">Get Your Free Quote</h3>
             <p class="text-muted mb-4">Fill out the form below and we'll get back to you within 24 hours with a personalized quote for your location.</p>
             
-            <form>
+            <form id="newsletter" class="contact-form" action="https://bps.securetransmit.io/web/archvending-contact/form?token=T2kHF5AjxzZH9mFmyXQMGoBM&redirect_url=https://archvending.com/thanks" method="POST">
               <div class="row g-3">
                 <div class="col-md-6">
                   <label for="firstName" class="form-label">First Name *</label>
-                  <input type="text" class="form-control" id="firstName" required>
+                  <input type="text" class="form-control" id="firstName" name="firstName" required>
                 </div>
                 <div class="col-md-6">
                   <label for="lastName" class="form-label">Last Name *</label>
-                  <input type="text" class="form-control" id="lastName" required>
+                  <input type="text" class="form-control" id="lastName" name="lastName" required>
                 </div>
                 <div class="col-md-6">
                   <label for="email" class="form-label">Email Address *</label>
-                  <input type="email" class="form-control" id="email" required>
+                  <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="col-md-6">
                   <label for="phone" class="form-label">Phone Number *</label>
-                  <input type="tel" class="form-control" id="phone" required>
+                  <input type="tel" class="form-control" id="phone" name="phone" required>
                 </div>
                 <div class="col-12">
                   <label for="company" class="form-label">Company Name</label>
-                  <input type="text" class="form-control" id="company">
+                  <input type="text" class="form-control" id="company" name="company">
                 </div>
                 <div class="col-12">
                   <label for="address" class="form-label">Business Address *</label>
-                  <input type="text" class="form-control" id="address" required>
+                  <input type="text" class="form-control" id="address" name="address" required>
                 </div>
                 <div class="col-md-6">
                   <label for="city" class="form-label">City *</label>
-                  <input type="text" class="form-control" id="city" required>
+                  <input type="text" class="form-control" id="city" name="city" required>
                 </div>
                 <div class="col-md-3">
                   <label for="state" class="form-label">State *</label>
-                  <select class="form-select" id="state" required>
+                  <select class="form-select" id="state" name="state" required>
                     <option value="">Select State</option>
                     <option value="MO">Missouri</option>
                     <option value="IL">Illinois</option>
@@ -67,11 +67,11 @@ description: Contact Arch Vending for a free consultation and quote. We serve th
                 </div>
                 <div class="col-md-3">
                   <label for="zipCode" class="form-label">Zip Code *</label>
-                  <input type="text" class="form-control" id="zipCode" required>
+                  <input type="text" class="form-control" id="zipCode" name="zipCode" required>
                 </div>
                 <div class="col-12">
                   <label for="serviceType" class="form-label">Service Type *</label>
-                  <select class="form-select" id="serviceType" required>
+                  <select class="form-select" id="serviceType" name="serviceType" required>
                     <option value="">Select Service Type</option>
                     <option value="traditional">Traditional Vending Machines</option>
                     <option value="kiosks">Modern Touch-Screen Kiosks</option>
@@ -82,7 +82,7 @@ description: Contact Arch Vending for a free consultation and quote. We serve th
                 </div>
                 <div class="col-12">
                   <label for="locationType" class="form-label">Location Type</label>
-                  <select class="form-select" id="locationType">
+                  <select class="form-select" id="locationType" name="locationType">
                     <option value="">Select Location Type</option>
                     <option value="office">Office Building</option>
                     <option value="warehouse">Warehouse/Factory</option>
@@ -95,7 +95,7 @@ description: Contact Arch Vending for a free consultation and quote. We serve th
                 </div>
                 <div class="col-12">
                   <label for="employees" class="form-label">Number of Employees</label>
-                  <select class="form-select" id="employees">
+                  <select class="form-select" id="employees" name="employees">
                     <option value="">Select Range</option>
                     <option value="1-10">1-10</option>
                     <option value="11-25">11-25</option>
@@ -106,11 +106,11 @@ description: Contact Arch Vending for a free consultation and quote. We serve th
                 </div>
                 <div class="col-12">
                   <label for="message" class="form-label">Additional Information</label>
-                  <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your specific needs, preferences, or any questions you have..."></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about your specific needs, preferences, or any questions you have..."></textarea>
                 </div>
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="newsletter">
+                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
                     <label class="form-check-label" for="newsletter">
                       I'd like to receive updates about new services and special offers
                     </label>
