@@ -1,5 +1,5 @@
 title: Arch Vending
-description: Professional vending machine services for St. Louis metro and surrounding areas
+description: Family-owned vending machine services for St. Louis metro and surrounding areas. Founded in 2022, we specialize in serving smaller, niche locations with quality vending solutions.
 url: "https://archvending.com"
 baseurl: ""
 
@@ -48,7 +48,7 @@ social:
 
 # Colors (based on your logo)
 colors:
-  primary: "#353C56"    # Dark blue
-  secondary: "#62ABA2"  # Light blue
-  accent: "#ED1E44"     # Red
-  highlight: "#FED766"  # Yellow/gold 
+  primary: "#123C62"    # Dark blue
+  secondary: "#D4E4EC"  # Light blue
+  accent: "#BE1E2D"     # Deep red
+  powder: "#C5CED6"     # Powder 

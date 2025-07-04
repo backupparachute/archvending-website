@@ -33,16 +33,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <style>
-    :root {
-      --primary-color: {{ site.colors.primary }};
-      --secondary-color: {{ site.colors.secondary }};
-      --accent-color: {{ site.colors.accent }};
-      --highlight-color: {{ site.colors.highlight }};
-      --light-bg: #f8f9fa;
-      --dark-text: #2c3e50;
-    }
+      <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-color: {{ site.colors.primary }};
+        --secondary-color: {{ site.colors.secondary }};
+        --accent-color: {{ site.colors.accent }};
+        --powder-color: {{ site.colors.powder }};
+        --light-bg: #f8f9fa;
+        --dark-text: #2c3e50;
+      }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -99,8 +99,8 @@
       background-color: var(--accent-color) !important;
     }
 
-    .bg-highlight {
-      background-color: var(--highlight-color) !important;
+    .bg-powder {
+      background-color: var(--powder-color) !important;
     }
 
     .text-primary {
@@ -116,7 +116,7 @@
     }
 
     .hero-section {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--powder-color) 100%);
       color: white;
       padding: 100px 0;
     }
@@ -186,7 +186,7 @@
     }
 
     .cta-section {
-      background: linear-gradient(135deg, var(--accent-color) 0%, #d4193a 100%);
+      background: linear-gradient(135deg, var(--accent-color) 0%, #a01824 100%);
       color: white;
       padding: 80px 0;
     }
@@ -198,7 +198,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/images/Arch%20Vending_Dark%20Blue%20-%20Red%20-%20BG.png" alt="Arch Vending">
+        <img src="{{ site.baseurl }}/images/Arch%20Vending_Dark%20Blue%20-%20Red%20Text%20-%20Transparent.png" alt="Arch Vending">
       </a>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -230,7 +230,7 @@
       <div class="row">
         <div class="col-lg-4 mb-4">
           <img src="{{ site.baseurl }}/images/Arch%20Vending_Stacked%20Light%20Blue%20-%20Red%20Text%20-%20Transparent.png" alt="Arch Vending" height="60" class="mb-3">
-          <p>Professional vending machine services for St. Louis metro and surrounding areas. We specialize in serving smaller, niche locations that larger companies often overlook.</p>
+          <p>Family-owned vending machine services for St. Louis metro and surrounding areas. Founded in 2022, we specialize in serving smaller, niche locations that larger companies often overlook.</p>
         </div>
         <div class="col-lg-4 mb-4">
           <h5>Quick Links</h5>
